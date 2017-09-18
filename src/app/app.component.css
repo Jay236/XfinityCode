@@ -1,0 +1,31 @@
+body{
+ background: linear-gradient(to right, #000000, #434343); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table-hover {
+  color: red;
+}
+
+
+
+th, td {
+  text-align: center;
+  padding: 10px;
+  font-size:20px;
+}
+#filter{
+  text-align: center;
+  font-size: 20px;
+  padding: 20px;
+  margin: 20px;
+
+}
+.pointer{
+  cursor: pointer;
+}

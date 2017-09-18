@@ -1,0 +1,58 @@
+
+	
+	[	
+	{
+	             "name":	"Viraj",
+				"category":	"C1",
+				"amount":	10
+				},
+				{
+					"name": "Jason",
+					"category": "C1",
+					"amount": 30
+					},
+					{
+					"name": "Ninja",
+					"category": "C1",
+					"amount": 20
+					},
+					{
+					"name": "Samuel",
+					"category": "C2",
+					"amount": 100
+					},
+					{
+					"name": "Zing",
+					"category": "C2",
+					"amount": 600
+					
+					},
+					{
+					"name": "Bruce lee",
+					"category": "C2",
+					"amount": 200
+					},
+					{
+					"name": "Jack",
+					"category": "C2",
+					"amount": 500
+					},
+					{
+					"name": "Paul walker",
+					"category": "C3",
+					"amount": 1000
+					},
+					{
+					"name": "Brad",
+					"category": "C3",
+					"amount": 3000
+					},
+					{
+					"name": "Tom cruise",
+					"category": "C3",
+					"amount": 5000
+					}
+					]
+		
+
+		

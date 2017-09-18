@@ -1,0 +1,50 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<a routerLink ='home'>Home</a>
+<a routerLink ='about'>About</a>
+<div style="text-align:center">
+    
+  <h1>
+    Welcome to {{title}}!
+  </h1>
+</div>
+<div class="mainContainer">
+    <form id="filter">
+      <label>Filter details by name:</label><br>
+  <input type="text" placeholder="Enter your name" [(ngModel)]="term"  [ngModelOptions] = "{standalone: true}">
+    </form>
+
+  <table class="table table-hover">
+    <thead>
+      <tr>
+          <th class="text-center pointer" (click)="sort('name')">Name<i class="fa" 
+            [ngClass]="{'fa-sort': column != 'name', 
+                                'fa-sort-asc': (column == 'name' && !isDesc), 
+                                'fa-sort-desc': (column == 'name' && isDesc) }"
+            aria-hidden="true"> </i>
+        </th>
+          <th class="text-center pointer" (click)="sort('category')"> Category<i class="fa" 
+            [ngClass]="{'fa-sort': column != 'category', 
+                                'fa-sort-asc': (column == 'category' && !isDesc), 
+                                'fa-sort-desc': (column == 'category' && isDesc) }"
+            aria-hidden="true"> </i>
+       </th>
+          <th class="text-center pointer" (click)="sort('amount')">Amount<i class="fa" 
+            [ngClass]="{'fa-sort': column != 'amount', 
+                                'fa-sort-asc': (column == 'amount' && !isDesc), 
+                                'fa-sort-desc': (column == 'amount' && isDesc) }"
+            aria-hidden="true"> </i>
+        </th>
+      </tr>
+    </thead>
+
+    <tbody>
+    <tr *ngFor="let datas of data | orderByname: term | reverse: {datas: column, direction: direction}">
+      <td>{{datas.name}}</td>
+      <td>{{datas.category}}</td>
+      <td>{{datas.amount | currency:'USD'}}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+<router-outlet></router-outlet>
